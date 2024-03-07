@@ -12,7 +12,10 @@
 
         <div class="display-container">
             <input readonly placeholder="Password" class="display" data-passwordDisplay>
-            <img src="./assets/copy.svg" alt="copy" width="23" height="23">
+            <button data-copy>
+                <span data-copyMsg>Copied</span>
+                <img src="./assets/copy.svg" alt="copy" width="23" height="23">
+            </button>
         </div>
 
         <div class="input-container">
@@ -52,6 +55,8 @@
 
             <!--Generate Password-->
             <button class="generateButton">Generate Password</button>
+
+            <script src="script.js"></script>
         </div>
 
     </div>
