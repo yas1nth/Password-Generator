@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password-Generator</title>
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="container">
@@ -11,9 +16,9 @@
         <h1>Password Generator</h1>
 
         <div class="display-container">
-            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+            <input readonly placeholder="PASSWORD" class="display" data-passwordDisplay>
             <button data-copy>
-                <span data-copyMsg>Copied</span>
+                <span class="tooltip" data-copyMsg></span>
                 <img src="./assets/copy.svg" alt="copy" width="23" height="23">
             </button>
         </div>
@@ -30,19 +35,19 @@
             <input type="range" class="slider" min="1" max="20" step="1" data-lengthSlider>
 
             <!--CheckBoxes-->
-            <div>
+            <div class="check">
                 <input type="checkbox" id="uppercase">
                 <label for="uppercase">Includes UpperCase Letters</label>
             </div>
-            <div>
+            <div class="check">
                 <input type="checkbox" id="lowercase">
                 <label for="lowercase">Includes LowerCase Letters</label>
             </div>
-            <div>
+            <div class="check">
                 <input type="checkbox" id="numbers">
                 <label for="numbers">Includes Numbers</label>
             </div>
-            <div>
+            <div class="check">
                 <input type="checkbox" id="symbols">
                 <label for="symbols">Includes Symbols</label>
             </div>
